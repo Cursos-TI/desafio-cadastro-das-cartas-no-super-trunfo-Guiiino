@@ -1,22 +1,45 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+
+    char cidade[50], pais[50];
+    float area, populacao, pib;
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    printf("Para começarmos o nosso jogo, vamos cadastrar nossas cartas!\n");
+
+    printf("Informe o nome do País em que a cidade faz parte: \n");
+    fgets(pais, 50, stdin);  // Lê até 49 caracteres, incluindo espaços
+    printf("O Pais escolhido foi: %s\n", pais);
+
+    Printf("Perfeito! Agora informe a cidade desejada: \n");
+    fgets(cidade, 50, stdin);
+    printf("A cidade informada foi: %s\n", cidade);
+
+    printf("Para darmos continuidade, informe a área da cidade escolhida: \n");
+    scanf("%f", &area);
+    Printf("A area mencionada foi: %f\n", area);
+
+    Printf("Agora informe a população de sua cidade: \n");
+    scanf("%f", &populacao);
+    Printf("A população de sua cidade é: %f\n", populacao);
+
+    printf("Para finalizar, informe o PIB da sua cidade: \n");
+    scanf("%f", pib);
+    printf("O PIB de sua cidade é: %f\n", pib);
+
+    printf("Essa foi sua carta cadastrada: \n");
+
+    printf("O Pais escolhido foi: %s\n", pais);
+
+    printf("A cidade informada foi: %s\n", cidade);
+
+    Printf("A area mencionada foi: %f\n", area);
+
+    Printf("A população de sua cidade é: %f\n", populacao);
+
+    printf("O PIB de sua cidade é: %f\n", pib);
+
 
     return 0;
 }
